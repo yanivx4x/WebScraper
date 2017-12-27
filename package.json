@@ -1,0 +1,29 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "myAPP",
+  "main": "Scraper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yaniv Knoll",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "latest",
+    "bower": "^1.8.2",
+    "cheerio": "^1.0.0-rc.2",
+    "cheerio-req": "^1.2.2",
+    "express": "^4.16.2",
+    "gulp": "^3.9.1",
+    "jsdom": "^11.5.1",
+    "passport": "^0.4.0",
+    "request": "latest",
+    "shelljs": "^0.7.8",
+    "underscore": "^1.8.3",
+    "webdriverio": "^4.9.11",
+    "wiredep": "^4.0.0"
+  },
+  "devDependencies": {
+    "gulp-inject": "^4.3.0"
+  }
+}

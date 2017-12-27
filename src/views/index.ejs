@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Colors</title>
+    <meta name="generator" content="Bootply"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <!-- endbower -->
+
+
+    <!-- bower:js -->
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- endbower -->
+
+    <!-- inject:css -->
+
+    <!-- endinject -->
+
+    <!-- inject:js -->
+
+    <!-- endinject -->
+</head>
+<body>
+<div class="container">
+    <div class="panel">
+        <div class="panel-heading">
+            <h1>Enter A Url You Will Get The Colors!!</h1>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    <form method="post" action="/">
+                        <h2>Enter Url</h2>
+                        <div id="custom-search-input">
+                            <div class="input-group col-md-12">
+                                <input name="url" type="text" class="form-control input-lg" placeholder="URL"/>
+                                <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="submit">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <ul class="list-group">
+        <%for(let i=0;i<colors.length;i++){%>
+        <li style="background-color:<%=colors[i]%> " class="list-group-item"><%=colors[i]%></li>
+        <%}%>
+    </ul>
+</div>
+</body>
+</html>
